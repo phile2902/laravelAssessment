@@ -5,3 +5,14 @@
 .rentBook h2{
     margin-top: 0px;
 }
+
+.home{
+    color: #337ab7 !important;
+}
+
+.navbar-header .btn{
+    margin-left: 0px !important;
+    color: #ffffff;
+    border-radius: 0px;
+    border-bottom: 2px solid #ec971f;
+}

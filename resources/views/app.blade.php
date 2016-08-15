@@ -29,13 +29,13 @@
 					<span class="icon-bar"></span>
 					<span class="icon-bar"></span>
 				</button>
-				<a class="navbar-brand" href="{{ asset('/') }}">Home</a>
-                                @if(!Auth::guest())
-                                    <a class="navbar-brand" href="{{ asset('showBooksPage') }}">Books List</a>
-                                    @if(Auth::user()->role == 'admin')
-                                        <a class="navbar-brand" href="{{ asset('addBooks') }}">Add more books</a>
-                                    @endif
-                                @endif
+				<a class="navbar-brand home" href="{{ asset('/') }}">Home</a>
+                @if(!Auth::guest())
+                    <a class="btn btn-primary navbar-brand" href="{{ asset('showBooksPage') }}">Books List</a>
+                    @if(Auth::user()->role == 'admin')
+                        <a class="btn btn-primary navbar-brand" href="{{ asset('addBooks') }}">Add more books</a>
+                    @endif
+                @endif
                                 
                                 
 			</div>
